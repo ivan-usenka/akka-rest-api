@@ -1,11 +1,11 @@
-package com.havi
+package com.havi.merger
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.{ContentTypes, HttpEntity}
-import akka.http.scaladsl.server.Directives.{complete, logRequestResult, path, pathPrefix, _}
+import akka.http.scaladsl.server.Directives.{complete, get, logRequestResult, path, pathPrefix}
 import akka.stream.ActorMaterializer
-import com.havi.actor.{MergeRequest, MergerActor}
+import com.havi.merger.actor.{MergeRequest, MergerActor}
 import com.typesafe.config.ConfigFactory
 
 import scala.concurrent.ExecutionContextExecutor

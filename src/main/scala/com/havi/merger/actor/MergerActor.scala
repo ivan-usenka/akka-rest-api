@@ -1,4 +1,4 @@
-package com.havi.actor
+package com.havi.merger.actor
 
 import akka.actor.{Actor, ActorLogging, Props}
 

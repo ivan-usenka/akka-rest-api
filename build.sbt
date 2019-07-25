@@ -18,3 +18,5 @@ libraryDependencies ++= {
     "com.typesafe.akka" %% "akka-testkit"    % akkaVersion   % "test"
   )
 }
+
+mainClass in assembly := Some("com.havi.merger.MergerApplication")
